@@ -1,0 +1,157 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.container {
+  width: 80%;
+  min-height: 100vh;
+/*  display: flex;*/
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #0080ff;
+  width: 250px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 11px 8px 5px 0px #07273133;
+  border-radius: 10px;
+ 
+  background: rgb(2,0,36);
+  background: linear-gradient(3deg, #203d88 9%, rgb(13 98 124) 70%);
+  border: 0;
+  transition: .5s;
+}
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5 {
+  margin: 0px;
+  padding: 0px 0px 15px 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card hr {
+  display: block;
+  border: none;
+  height: 3px;
+  background-color: rgb(0, 128, 255);
+  margin: 0px;
+  -webkit-animation-name: line-show;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: line-show;
+  animation-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */
+}
+.card p {
+  margin: 15px 0px 0px 0px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.25px;
+  line-height: 1.25;
+  font-size: 14px;
+  word-break: break-all;
+  word-wrap: pre-wrap;
+  color: #ffffff;
+}
+.card button {
+  border: none;
+  background-color: rgb(0, 128, 255);
+  /* width: 50%; */
+  margin: 10px auto;
+  padding: 10px 30px;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+/* Standard syntax */
+@keyframes line-show {
+  from {
+    margin: 0px 100px;
+  }
+  to {
+    margin: 0px;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+/* Standard syntax */
+@keyframes p-show {
+  from {
+    color: white;
+  }
+  to {
+    color: #282828;
+  }
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px rgb(0, 128, 192);
+  }
+}
+/* Standard syntax */
+@keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px rgb(0, 128, 192);
+  }
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.row_cards a.btn {
+    width: 98%;
+}
+
+.row_cards button.btn.btn-primary {
+    font-size: 13px;
+}
+
+.row_cards .card-footer{
+	border-top: 1px solid #fff;
+}
